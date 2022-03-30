@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.typekit.net/xrt7njc.css">
+
+        <title>Melissa's CV</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: greycliff-cf, sans-serif;
+        }  
+        .content {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            float: left;
+        }
+        .tab {
+            padding: 15px 15px;
+            border: 1px solid white;
+            background-color:#f5fff3;
+            float: right;  
+        }
+        h1{
+            color: #00584b;
+            margin-top: 100 px;
+        }
+        h2, h4, h5{
+            margin-top: 10 px;
+            color: #00584b;
+        }
+        </style>
+        
+    <script>
+        var tabAbout = [
+            '<h1>About Me</h1>'+
+            '<h2>Let me introduce myself. My name is Melissa! </h2>'+
+            '<h2>Well people call me Melby nowadays.</h2>'+
+            '<h4>Watching movies is one way for me to relieve stress.</h4>'+
+            '<h4>Im almost always listening to music, well except when i am sleeping.</h4>'+
+            '<h4>Here are some things that i am good at:</h4>'+
+            '<h5>-Adobe Illustrator</h5>'+
+            '<h5>-Adobe After Effects</h5>'+
+            '<h5>-Adobe Indesign</h5>'+
+            '<h5>-Adobe Photoshop</h5>'+
+            '<h5>-Procreate</h5>'
+        ];
+        var tabEx = [
+            '<h1>Experience</h1>'+
+            '<h4>-Design Comittee Typolog Expanded</h4>'+
+            '<h4>-Design Comittee RESCUE 2021</h4>'+
+            '<h4>-Event Comitttee in Point of View 2021</h4>'+
+            '<h4>-Mentor in Mentoring UPH 2021-2022</h4>'+
+            '<h4>-Design Comittee Typolog 2022</h4>'+
+            '<h4>-Design Comittee Heart to Serve 2022</h4>'+
+            '<h4>-Freelancer</h4>'
+        ];
+        var tabEdu = [
+            '<h1>Education</h1>'+
+            '<h4>-2009-2016: Singapore School Medan</h4>'+
+            '<h4>-2016-2020: Prime One School Medan</h4>'+
+            '<h4>-2020-present: Universitas Pelita Harapan, Lippo Village Campus</h4>'
+        ];
+    </script>
+    </head>
+    <body>
+        <div id="About" class="tab" onclick="openPage (tabAbout,'#f5fff3')">About</div>
+        <div id="Education" class="tab" onclick="openPage (tabEdu, '#f6d8f7')">Education</div>
+        <div id="Experience" class="tab" onclick="openPage (tabEx, 'lightblue')">Experience</div>
+        <div id="itu" class="content">
+            <h1>Hello! Welcome to my Resume!</h1>
+            <h4>-Melby</h4>
+        </div>   
+       
+    </body>
+</html>   
+
+<script>
+    function openPage (data, backgroundColor) {
+        document.querySelector ('#itu').innerHTML = data;
+        document.querySelector ('#itu').style.backgroundColor = backgroundColor
+    }
+</script>
